@@ -1,0 +1,8 @@
+[wokwi]
+version = 1
+firmware = "firmware/.pio/build/esp32s3/firmware.bin"
+elf = "firmware/.pio/build/esp32s3/firmware.elf"
+
+[[chip]]
+name = "st7789"
+binary = "st7789.chip.wasm"

@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "author": "Antigravity",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-s3-devkitc-1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": { "flashSize": "8" }
+    },
+    {
+      "type": "chip-st7789",
+      "id": "st7789",
+      "top": 30,
+      "left": 300,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "esp:3V3.1", "st7789:VCC", "red", [ "v0", "h30", "v0" ] ],
+    [ "esp:GND.1", "st7789:GND", "black", [ "v0", "h40", "v0" ] ],
+    [ "esp:11", "st7789:SDA", "gold", [ "h20", "v0" ] ],
+    [ "esp:12", "st7789:SCL", "green", [ "h25", "v0" ] ],
+    [ "esp:10", "st7789:CS", "purple", [ "h15", "v0" ] ],
+    [ "esp:9", "st7789:DC", "blue", [ "h10", "v0" ] ],
+    [ "esp:8", "st7789:RST", "gray", [ "h35", "v0" ] ]
+  ],
+  "dependencies": {}
+}
